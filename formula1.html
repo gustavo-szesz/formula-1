@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formula1.css">
+    <script type="text/javascript" src="formula1.js"></script>
+    <title>Document</title>
+</head>
+<body onload="init()">
+    <h1>Bets - Formula 1 UP</h1>
+
+    <div id="bets">
+        <p>Realize your bets!</p>
+        <label for="bet-amount">Value of bet (mín. R$5):</label>
+        <input type="number" id="bet-amount" min="5" step="any" required><br><br>
+        
+        <label for="bet-car">Select a car:</label>
+        <select id="bet-car">
+            <option value="">Options...</option>
+            <option value="ferrari">Ferrari</option>
+            <option value="redbull">Red Bull</option>
+            <option value="aston-martin">Aston Martin</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="mc-laren">McLaren</option>
+        </select><br><br>
+
+        <button type="button" onclick="placeBet()">Place Bet</button><br><br>
+        
+        <p>Saldo atual: R$<span id="balance">100</span></p>
+        <p id="result-message"></p>
+    </div>
+
+    <div class="pista">
+        <div id="ferrari"></div>
+        <div id="redbull"></div>
+        <div id="aston-martin"></div>
+        <div id="mercedes"></div>
+        <div id="mc-laren"></div>
+    </div>
+    <button type="button" id="start-race" onclick="startRace()">Start race</button>
+
+
+</body>
+</html>

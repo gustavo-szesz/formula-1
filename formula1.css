@@ -1,0 +1,39 @@
+.pista {
+    width: 700px;
+    height: 500px;
+    background-color: lightgrey;
+  }
+  
+#ferrari {
+    position: flex;
+    background-color: rgb(255, 0, 0);
+    width: 100px;
+    height: 100px;
+    /*transform: translate(20px, 20px);
+    This field is the main part
+    */
+}
+#redbull {
+    position: flex;
+    background-color: rgb(43, 0, 255);
+    width: 100px;
+    height: 100px;
+}
+#aston-martin {
+    position: flex;
+    background-color: rgb(4, 116, 79);
+    width: 100px;
+    height: 100px;
+}
+#mercedes {
+    position: flex;
+    background-color: rgb(28, 28, 28);
+    width: 100px;
+    height: 100px;
+}
+#mc-laren {
+    position: flex;
+    background-color: rgb(233, 157, 5);
+    width: 100px;
+    height: 100px;
+}
